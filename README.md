@@ -1,5 +1,20 @@
 # kidsnews-site
 
+> ⚠️ **このリポジトリは Cloudflare Pages の direct upload 型。`git push` しても本番には反映されない。** マージ後は必ず以下でデプロイする。
+>
+> ```bash
+> npx wrangler pages deploy . --project-name=kidsnews-site --branch=main
+> ```
+>
+> 実行には環境変数 `CLOUDFLARE_API_TOKEN` と `CLOUDFLARE_ACCOUNT_ID` が必要（値そのものはここに書かない）。
+>
+> デプロイ後は以下3点を確認する:
+> - `https://kodomoshimbun.app/.well-known/apple-app-site-association` が 200 かつ `Content-Type: application/json`
+> - `https://kodomoshimbun.app/invite/適当なtoken` が 200
+> - 今回修正した該当ページ
+>
+> AASA (`apple-app-site-association`) は Apple 側 CDN が最大6時間キャッシュするため、デプロイ直後は反映が遅れることがある。Universal Links の不具合調査時はまずこのキャッシュ遅延を疑う。
+
 こども新聞（KidsNews）の公式サイト。Cloudflare Pages で配信（カスタムドメイン `kodomoshimbun.app`）。
 
 主目的:
