@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "XNM435XMXL.com.kidsnews-app",
+          "XNM435XMXL.com.kidsnews-app.dev"
+        ],
+        "components": [
+          {
+            "/": "/invite/*",
+            "comment": "招待リンク（#126）"
+          }
+        ]
+      }
+    ]
+  }
+}
