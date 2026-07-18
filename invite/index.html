@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>招待リンク — こども新聞</title>
+<style>
+  :root { --paper: #f5f2ea; --ink: #16130e; --rule: #cbc4b4; --sub: #5a5344; }
+  body { margin: 0; background: var(--paper); color: var(--ink);
+         font-family: "Hiragino Mincho ProN", "Yu Mincho", serif; line-height: 1.9; }
+  main { max-width: 480px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 1.6rem; letter-spacing: .08em; border-bottom: 3px double var(--ink);
+       padding-bottom: .5em; text-align: center; }
+  p.lead { font-size: 1rem; color: var(--sub); text-align: center; margin-top: 1em; }
+  ol.steps { list-style: none; margin: 2.4em 0; padding: 0; counter-reset: step; }
+  ol.steps li { counter-increment: step; position: relative; padding: 0 0 2em 3em;
+                font-size: 1.05rem; }
+  ol.steps li::before { content: counter(step); position: absolute; left: 0; top: -.1em;
+                         width: 1.9em; height: 1.9em; border: 1px solid var(--ink);
+                         border-radius: 50%; display: flex; align-items: center;
+                         justify-content: center; font-size: 1rem; background: #fff; }
+  .btn { display: block; width: 100%; box-sizing: border-box; margin-top: .8em;
+         padding: 18px 0; background: var(--ink); color: var(--paper); text-align: center;
+         text-decoration: none; font-size: 1.05rem; letter-spacing: .1em;
+         min-height: 60px; box-sizing: border-box; display: flex; align-items: center;
+         justify-content: center; }
+  .note { background: #efeade; border: 1px solid var(--rule); padding: 1em 1.2em;
+          font-size: 1rem; color: var(--sub); margin-top: 2em; }
+  footer { margin-top: 4em; padding-top: 1em; border-top: 1px solid var(--rule);
+           color: var(--sub); font-size: .9rem; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+<h1>ご招待状がとどきました</h1>
+<p class="lead">「こども新聞」を読むには、まずアプリをインストールしてください。</p>
+
+<ol class="steps">
+  <li>
+    App Store で「こども新聞」をさがしてインストールしてください。
+    <a class="btn" href="https://apps.apple.com/jp/app/id6792276301">App Store でひらく</a>
+  </li>
+  <li>
+    インストールが終わったら、とどいた招待リンクを<strong>もういちど開いて</strong>ください。
+  </li>
+</ol>
+
+<p class="note">すでに「こども新聞」をインストール済みの方は、このページではなく招待リンクをもう一度タップしてください。</p>
+
+<footer>─ こども新聞 ─</footer>
+</main>
+</body>
+</html>
