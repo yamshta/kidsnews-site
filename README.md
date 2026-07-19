@@ -39,4 +39,4 @@ Universal Links は `/.well-known/apple-app-site-association` を拡張子なし
 
 
 > 公開リポジトリのため、メールアドレス・API キー等の秘匿情報はコミットしない。
-> お問い合わせ導線は App Store のアプリページ「開発元」セクションに統一する。
+> お問い合わせ導線は `contact@kodomoshimbun.app`（Cloudflare Email Routing の転送アドレス）に統一する。個人のメールアドレスはコミットしない。
